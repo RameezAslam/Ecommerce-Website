@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/ecommerce.css">
+        <link rel="stylesheet" href="styles/products.css">
+        <title>
+            Products Page
+        </title>
+    </head>
+    <body>
+        <nav class="ecommerce-header">
+
+            <div class="header-left">
+                <a href="ecommerce.html">
+                    <img class="store-logo" src="landingpage-icons/logo.avif" alt=""> 
+                </a>
+                
+            </div>
+
+            <div class="header-middle">
+                <input type="text" placeholder="Search">
+                <button class="search-btn">
+                    <img class="search-icon" src="images/search-icon.png" alt="search icon">
+                </button>
+            </div>
+
+            <div class="header-right">
+                
+                <div class="cart-container">
+                    <a href="checkout.html">
+                        <img class="cart-icon" src="images/cart.png" alt="cart">
+                        <span class="cart-quantity js-cart-quantity">0</span>
+                    </a>
+                </div> 
+            </div>
+        </nav>
+                <div class="main">
+                    <div class="products-grid js-products-grid">
+                    </div>
+                </div>
+
+            <script type="module" src="scripts/ecommerce.js"></script>
+            <script type="module" src="scripts/products.js"></script>
+
+    </body>

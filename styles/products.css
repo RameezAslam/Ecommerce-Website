@@ -1,0 +1,110 @@
+.main{
+    margin-top: 5rem;
+}
+.products-grid{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+@media (max-width:2000px) {
+    .products-grid{
+        grid-template-columns: repeat(7,1fr);
+    }
+}
+@media (max-width:1600px) {
+    .products-grid{
+        grid-template-columns: repeat(6,1fr);
+    }
+}
+@media (max-width:1300px) {
+    .products-grid{
+        grid-template-columns: repeat(5,1fr);
+    }
+}
+@media (max-width:1000px) {
+    .products-grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media (max-width: 800px) {
+    .products-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width: 575px) {
+    .products-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 467px) {
+    .products-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.product-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.3rem;
+    padding-right: 1.3rem;
+    padding-bottom: 1.3rem;
+    padding-left: 1.3rem;
+    border-right: 1px solid  rgb(233, 233, 233);
+    border-bottom: 1px solid  rgb(233, 233, 233); 
+}
+.product-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+    margin-bottom: 1.4rem;
+}
+.product-image{
+    max-width: 100%;
+    max-height: 100%;
+}
+.product-name{
+    height: 2.4rem;
+    margin-bottom: 0.6rem;  
+}
+.product-name {
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    -webkit-line-clamp: 2; /* Limits to 2 lines */
+    text-overflow: ellipsis;
+    max-height: 3em; /* Adjust based on line height */
+    line-height: 1.2em; /* Line height should be calculated based on the max-height */
+}
+.product-rating-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+.rating-stars{
+    width: 8rem;
+    margin-right: 0.4rem;
+}
+.product-rating-count{
+    color: rgb(1, 124, 182);
+    cursor: pointer;
+    margin-top: 3px;
+}
+.product-price{
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+.product-quantity-selector{
+    margin-bottom: 1.2rem;
+}
+.add-to-cart-button{
+    width: 80%;
+    padding: 0.7rem;
+    border-radius: 3.1rem;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: black;
+    border: 1px solid rgb(216, 210, 210);
+}
